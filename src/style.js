@@ -1,4 +1,4 @@
-body {
+export const styles = `body {
   margin: 0;
   padding: 0;
 }
@@ -30,24 +30,46 @@ input {
   box-sizing: border-box;
   border-radius: 2px;
   border: 0;
-  color: #898989;
+  color: transparent;
   font-family: "Open Sans", sans-serif;
   padding: 11px 11px 14px 14px;
 }
+input:focus{
+  color: #898989
+}
+
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+  opacity: 0;
 }
 
 input::after {
   position: absolute;
-  content: url('./calendar.svg');
+  content: url(./calendar.svg);
   inset-block-start: 50%;
   transform: translateY(-50%);
   right: 10px;
-}
+  pointer-events: none;
 
+}
+#departDate:before, #returnDate:before {
+  position: absolute;
+  top: 13px;
+  content: "Depart date";
+  color: grey;
+  text-align: left;
+  font-size: 14px;
+
+}
+#returnDate:before{
+
+  content: "Return date";
+
+}
+#returnDate:focus:before, #departDate:focus:before{
+  content: ''
+}
 .btn {
   background-color: #f7a700;
   height: 40px;
@@ -120,7 +142,7 @@ input::after {
   }
 
   .block {
-    flex: 1 0 190px;
+    flex: 1 0 110px;
   }
 }
 
@@ -128,7 +150,9 @@ input::after {
   #widget {
     padding: 5px 10px 15px 10px;
   }
-
+  .block{
+  flex: unset;
+  }
   input,
   .btn {
     width: 100%;
@@ -147,4 +171,4 @@ input::after {
   .btn {
     padding: 9px 20px 13px 20px;
   }
-}
+}`
