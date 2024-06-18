@@ -12,3 +12,5 @@ To insert a widget on your site, simply paste this code into the place in your h
 <div id="widget"></div>
 ```
 ![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
