@@ -1,0 +1,1 @@
+# Adaptive embeddable widget
