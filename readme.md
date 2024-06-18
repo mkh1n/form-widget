@@ -14,3 +14,6 @@ To insert a widget on your site, simply paste this code into the place in your h
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+![alt text](image-3.png)
+
+This is a test task done according to <a href="https://github.com/KosyanMedia/Front-end_TP_test">this technical task</a>
